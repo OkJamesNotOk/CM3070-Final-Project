@@ -166,3 +166,23 @@ http://localhost:5173/
 Open the displayed URL in a web browser.
 
 Keep both the Django and Vue development servers running while using the application.
+
+## API Usage
+
+The main recommendation endpoint is:
+
+GET /api/song/
+
+Example:
+
+http://127.0.0.1:8000/api/song/?artist=Mili&language=Japanese&tags=j-pop
+
+Available search parameters:
+
+- `artist`
+- `language`
+- `tags`
+- `title_keywords`
+- `include_similar_artists`
+
+At least one search parameter must be provided.
