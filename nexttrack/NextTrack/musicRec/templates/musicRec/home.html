@@ -1,0 +1,21 @@
+<h1>NextTrack</h1>
+
+<form method="GET">
+    <input type="text" name="artist" placeholder="Enter artist name">
+    <button type="submit">Search</button>
+</form>
+
+<br>
+
+<form method="GET">
+    <button type="submit" name="random" value="1">
+        Random Song
+    </button>
+</form>
+
+{% if song %}
+    <h2>Recommended Song</h2>
+    <p><strong>Title:</strong> {{ song.title }}</p>
+    <p><strong>Artist:</strong> {{ song.artist }}</p>
+    <p><strong>Length:</strong> {{ song.length }}</p>
+{% endif %}

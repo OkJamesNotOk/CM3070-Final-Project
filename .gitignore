@@ -1,0 +1,18 @@
+# Secrets
+.env
+
+# Python virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Django
+db.sqlite3
+
+# Vue / Node
+node_modules/
+
+# OS / editor files
+.vscode/
